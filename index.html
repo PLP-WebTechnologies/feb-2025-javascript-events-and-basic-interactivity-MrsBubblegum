@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Welcome to My Week 6 Web Dev Assignment</h1>
+        <p>Explore the interactive elements below!</p>
+        <button id="changeTextBtn">Click to change text!</button>
+
+        <div id="gallery">
+            <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltb32b1db2d6fdebcc/6668d83e6ebb0a0d913a3dd6/best-love-songs-hero.jpg?q=70&width=3840&auto=webp" alt="Image 1" class="gallery-image">
+            <img src="https://i.pinimg.com/736x/68/18/9a/68189aa8a87d3b539159c75bdf27114f.jpg" alt="Image 2" class="gallery-image" width="300" height="auto">
+            <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/04/16155121/202503202209bernese-mountain-dog-cute-dogs.jpg" alt="Image 3" class="gallery-image">
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn" data-tab="aboutMe">About Me</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="contact">Contact</button>
+
+            <div id="aboutMe" class="tab-content">
+                <h2>About Me</h2>
+                <p>Hello! I'm a web development student learning about HTML, CSS, and JavaScript. This project
+                    demonstrates my skills in creating interactive web elements.</p>
+                <p>Try out all the interactive features to see what I've learned!</p>
+            </div>
+
+            <div id="projects" class="tab-content">
+                <h2>My Projects</h2>
+                <ul>
+                    <li>Week 1: HTML Basics</li>
+                    <li>Week 2: CSS Styling</li>
+                    <li>Week 3: CSS Layout</li>
+                    <li>Week 4: Responsive Design</li>
+                    <li>Week 5: JavaScript Basics</li>
+                    <li>Week 6: Interactive Web Elements (This project!)</li>
+                </ul>
+            </div>
+
+            <div id="contact" class="tab-content">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out if you have any questions or feedback about my projects.</p>
+                <p>You can also fill out the form below to get in touch!</p>
+            </div>
+        </div>
+
+        <form id="contactForm">
+            <h3>Contact Form</h3>
+            <p><small>Fields with real-time validation!</small></p>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <div id="nameError" class="error-message"></div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your.email@example.com">
+            <div id="emailError" class="error-message"></div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Minimum 8 characters">
+            <div id="passwordError" class="error-message"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <footer>
+            <p>Week 6 Web Development Assignment | 2025</p>
+            <p><small>Try double-clicking anywhere on the page to discover a secret!</small></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer> This page was coded with 💕 by Cherozade B. </footer>
+</body>
+
+</html>
